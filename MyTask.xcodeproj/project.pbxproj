@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A0ABC99AA489686EBF5286 /* Pods_MyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19D58CF979B7185DCD670AF /* Pods_MyTask.framework */; };
+		FC23103B274CCA5D004AABED /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23103A274CCA5D004AABED /* Download.swift */; };
+		FC23103D274CCA74004AABED /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23103C274CCA74004AABED /* Track.swift */; };
+		FC231040274CCAB1004AABED /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23103F274CCAB1004AABED /* DownloadService.swift */; };
+		FC231044274CDAB1004AABED /* SendingRecievingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC231043274CDAB1004AABED /* SendingRecievingViewController.swift */; };
 		FCE500F8274BF7B600DDC29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE500F7274BF7B600DDC29F /* AppDelegate.swift */; };
 		FCE500FA274BF7B600DDC29F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE500F9274BF7B600DDC29F /* SceneDelegate.swift */; };
 		FCE500FC274BF7B600DDC29F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE500FB274BF7B600DDC29F /* ViewController.swift */; };
 		FCE500FF274BF7B600DDC29F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE500FD274BF7B600DDC29F /* Main.storyboard */; };
 		FCE50101274BF7B800DDC29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE50100274BF7B800DDC29F /* Assets.xcassets */; };
 		FCE50104274BF7B800DDC29F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE50102274BF7B800DDC29F /* LaunchScreen.storyboard */; };
+		FCE5010C274BFC9D00DDC29F /* DownloadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5010B274BFC9D00DDC29F /* DownloadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7328B8E74BF26EA5B5EE6433 /* Pods-MyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTask.release.xcconfig"; path = "Target Support Files/Pods-MyTask/Pods-MyTask.release.xcconfig"; sourceTree = "<group>"; };
+		D19D58CF979B7185DCD670AF /* Pods_MyTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E75C7C461ECA005A88D8106B /* Pods-MyTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTask.debug.xcconfig"; path = "Target Support Files/Pods-MyTask/Pods-MyTask.debug.xcconfig"; sourceTree = "<group>"; };
+		FC23103A274CCA5D004AABED /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		FC23103C274CCA74004AABED /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		FC23103F274CCAB1004AABED /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		FC231043274CDAB1004AABED /* SendingRecievingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingRecievingViewController.swift; sourceTree = "<group>"; };
 		FCE500F4274BF7B600DDC29F /* MyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE500F7274BF7B600DDC29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCE500F9274BF7B600DDC29F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,7 @@
 		FCE50100274BF7B800DDC29F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCE50103274BF7B800DDC29F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCE50105274BF7B800DDC29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE5010B274BFC9D00DDC29F /* DownloadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A0ABC99AA489686EBF5286 /* Pods_MyTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3187400885EA46C8795B132 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D19D58CF979B7185DCD670AF /* Pods_MyTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBEBF9A9BDDA9690DD775D56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E75C7C461ECA005A88D8106B /* Pods-MyTask.debug.xcconfig */,
+				7328B8E74BF26EA5B5EE6433 /* Pods-MyTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC231039274CCA26004AABED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC23103A274CCA5D004AABED /* Download.swift */,
+				FC23103C274CCA74004AABED /* Track.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC23103E274CCA9E004AABED /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FC23103F274CCAB1004AABED /* DownloadService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FC231041274CDA56004AABED /* ViewComtrollers */ = {
+			isa = PBXGroup;
+			children = (
+				FCE500FB274BF7B600DDC29F /* ViewController.swift */,
+				FCE5010B274BFC9D00DDC29F /* DownloadingViewController.swift */,
+				FC231043274CDAB1004AABED /* SendingRecievingViewController.swift */,
+			);
+			path = ViewComtrollers;
+			sourceTree = "<group>";
+		};
+		FC231042274CDA6A004AABED /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FCE500F7274BF7B600DDC29F /* AppDelegate.swift */,
+				FCE500F9274BF7B600DDC29F /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		FCE500EB274BF7B600DDC29F = {
 			isa = PBXGroup;
 			children = (
 				FCE500F6274BF7B600DDC29F /* MyTask */,
 				FCE500F5274BF7B600DDC29F /* Products */,
+				BBEBF9A9BDDA9690DD775D56 /* Pods */,
+				B3187400885EA46C8795B132 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +126,10 @@
 		FCE500F6274BF7B600DDC29F /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
-				FCE500F7274BF7B600DDC29F /* AppDelegate.swift */,
-				FCE500F9274BF7B600DDC29F /* SceneDelegate.swift */,
-				FCE500FB274BF7B600DDC29F /* ViewController.swift */,
+				FC231042274CDA6A004AABED /* AppDelegate */,
+				FC23103E274CCA9E004AABED /* Service */,
+				FC231039274CCA26004AABED /* Models */,
+				FC231041274CDA56004AABED /* ViewComtrollers */,
 				FCE500FD274BF7B600DDC29F /* Main.storyboard */,
 				FCE50100274BF7B800DDC29F /* Assets.xcassets */,
 				FCE50102274BF7B800DDC29F /* LaunchScreen.storyboard */,
@@ -74,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCE50108274BF7B800DDC29F /* Build configuration list for PBXNativeTarget "MyTask" */;
 			buildPhases = (
+				A2EB9E5D28C8C522D827FB25 /* [CP] Check Pods Manifest.lock */,
 				FCE500F0274BF7B600DDC29F /* Sources */,
 				FCE500F1274BF7B600DDC29F /* Frameworks */,
 				FCE500F2274BF7B600DDC29F /* Resources */,
+				3B23A1F8C739AEB8E76ABD38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +206,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B23A1F8C739AEB8E76ABD38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTask/Pods-MyTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTask/Pods-MyTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyTask/Pods-MyTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2EB9E5D28C8C522D827FB25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FCE500F0274BF7B600DDC29F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FCE500FC274BF7B600DDC29F /* ViewController.swift in Sources */,
+				FC231040274CCAB1004AABED /* DownloadService.swift in Sources */,
+				FC231044274CDAB1004AABED /* SendingRecievingViewController.swift in Sources */,
 				FCE500F8274BF7B600DDC29F /* AppDelegate.swift in Sources */,
 				FCE500FA274BF7B600DDC29F /* SceneDelegate.swift in Sources */,
+				FCE5010C274BFC9D00DDC29F /* DownloadingViewController.swift in Sources */,
+				FC23103B274CCA5D004AABED /* Download.swift in Sources */,
+				FC23103D274CCA74004AABED /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +404,7 @@
 		};
 		FCE50109274BF7B800DDC29F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E75C7C461ECA005A88D8106B /* Pods-MyTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,11 +413,13 @@
 				DEVELOPMENT_TEAM = 85P697L6WQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyTask/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Reason for using Bonjour that the user can understand";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +429,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FCE5010A274BF7B800DDC29F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7328B8E74BF26EA5B5EE6433 /* Pods-MyTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,11 +444,13 @@
 				DEVELOPMENT_TEAM = 85P697L6WQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyTask/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Reason for using Bonjour that the user can understand";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +460,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -19,6 +19,13 @@ class ViewController: UIViewController {
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "DownloadingViewController") as! DownloadingViewController
         self.navigationController?.pushViewController(controller, animated: true)
     }
+    
+    @IBAction func btnReceiveAction(_ sender: UIButton)
+    {
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "SendingRecievingViewController") as! SendingRecievingViewController
+        controller.senderOrReciever = "Receiver"
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 
 }
 

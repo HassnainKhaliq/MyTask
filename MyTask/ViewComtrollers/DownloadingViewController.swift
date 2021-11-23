@@ -18,6 +18,7 @@ class DownloadingViewController: UIViewController ,URLSessionDownloadDelegate{
     @IBOutlet weak var img2: UIImageView!
     @IBOutlet weak var progress2: SSProgressBar!
     @IBOutlet weak var btnStartSending: UIButton!
+    @IBOutlet weak var lblDownloading: UILabel!
     
     let downloadService = DownloadService()
     lazy var downloadsSession: URLSession = {
@@ -30,6 +31,7 @@ class DownloadingViewController: UIViewController ,URLSessionDownloadDelegate{
     var arrImg = [UIImageView]()
     var arrUrl = [String]()
     var task: Int = 0
+    var arrImage = [UIImage]()
     
     var url0: String = "https://cdn.arstechnica.net/wp-content/uploads/2018/06/macOS-Mojave-Dynamic-Wallpaper-transition.jpg"
     var url1: String = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Polarlicht_2.jpg/1920px-Polarlicht_2.jpg?1568971082971"
@@ -54,14 +56,22 @@ class DownloadingViewController: UIViewController ,URLSessionDownloadDelegate{
         
         self.startDownloading(with: {
             //All images are downloaded perform next operation
+            for i in 0..<3
+            {
+                self.arrImage.append(self.arrImg[i].image!)
+            }
             self.btnStartSending.isHidden = false
+            self.lblDownloading.text = "Images Downloaded"
         })
     }
     
     
     @IBAction func btnStartSendingAction(_ sender: UIButton)
     {
-        
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "SendingRecievingViewController") as! SendingRecievingViewController
+        controller.senderOrReciever = "Sender"
+        controller.arrImages = self.arrImage
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     func startDownloading(with completion: @escaping () -> ())

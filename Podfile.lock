@@ -1,0 +1,16 @@
+PODS:
+  - SSProgressBar (1.0.1)
+
+DEPENDENCIES:
+  - SSProgressBar
+
+SPEC REPOS:
+  trunk:
+    - SSProgressBar
+
+SPEC CHECKSUMS:
+  SSProgressBar: 868de6156882f96b7325685b3748fcc80aeb3b6f
+
+PODFILE CHECKSUM: d32525f63f78d5d5f832cbb89abe211280a07ef8
+
+COCOAPODS: 1.11.2
